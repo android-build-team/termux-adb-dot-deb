@@ -6,7 +6,6 @@ Android Debug Bridge for Termux in a .deb package
 - <b>And install adb</b></br>
 ```apt update ; apt install adb```
 - <b>Make sure you install it on aarch64 or aarch (arm - arm64) architecture</b></br>
-- <b>You need to have php installed</b></b>
 - <b>Also that you already have Termux-API installed, with which you can access the USB port you have through the termux-usb command, or you can access the IP of your target android</b></br>
 ### Uninstall
 - <b>Run this</b></br>
