@@ -34,7 +34,7 @@ echo "$bb This script prepares the repository so that the .deb is accessible to 
 ###############PLEASE WAIT################"
 
 cd $PREFIX/etc/apt/sources.list.d/
-cat > cliet.list < EOF
+cat > adb.list < EOF
 deb [trusted=yes] https://raw.githubusercontent.com/bapm394/termux-adb-dot-deb/master/ termux adb
 EOF
 cd
