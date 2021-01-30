@@ -1,0 +1,56 @@
+#! /bin/sh
+#
+#
+#@# Colors
+
+#----------------------------- Verde
+g="\033[1;32m"
+#----------------------------- Rojo
+r="\033[1;31m"
+#----------------------------- Blanco
+w="\033[1;37m"
+#----------------------------- Azul
+b="\033[34m"
+#----------------------------- Cyan
+c="\033[1;36m"
+#----------------------------- Morado
+m="\033[35m"
+#----------------------------- Amarillo
+y="\033[33m"
+#----------------------------- Naranja
+o="\033[38;5;214m"
+#----------------------------- Azul Claro
+bb="\033[38;5;39m"
+#----------------------------- Rosado
+p="\033[38;5;213m"
+
+
+###
+
+   if [ -e /data/data/com.termux/files/usr/bin/php ]; then
+	clear
+   else 
+	echo "install PHP before running this script"
+	exit 1
+   fi
+
+
+clear
+echo "$bb This script prepares the repository so that the .deb is accessible to apt $g 
+###############PLEASE WAIT################ $w"
+mkdir $HOME/.repo
+mkdir $HOME/.repo/pkg
+cd $HOME/.repo
+wget https://github.com/bapm394/termux-adb-dot-deb/releases/download/8.37689/adb_8.37689_aarch64.deb
+mv adb_8.37689_aarch64.deb pkg/
+termux-apt-repo $PWD/pkg/ $PWD
+clear
+cd $PREFIX/etc/apt/sources.list.d/
+cat > adb.list < EOF
+deb [trusted=yes] http://127.0.0.1:6767 termux extras
+EOF
+cd $HOME/.repo
+clear
+echo "$bb In a new terminal run -> apt update; apt install adb <- $w
+ctrl + c to stop"
+php -S 127.0.0.1:6767 -t $PWD

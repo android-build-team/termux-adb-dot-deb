@@ -1,0 +1,10 @@
+Package: adb
+Version: 8.37689
+Architecture: aarch64
+Maintainer: Brandon Piesch <bapm394@gmail.com> 
+Installed-Size: 945 kB
+Depends: sh | bash | fish
+Homepage: https://www.github.com/bapm394/termux-adb-dot-deb
+Download-Size: 695 kB
+APT-Manual-Installed: yes
+Description: Android Debug Bridge and Fastboot tools for Termux. Chris Renshaw compiled the binaries, his link to xda https://forum.xda-developers.com/showthread.php?t=2239421
