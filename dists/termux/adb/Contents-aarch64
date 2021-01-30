@@ -1,0 +1,7 @@
+LICENSE                                                                          adb
+README.md                                                                        adb
+data/data/com.termux/files/usr/lib/android/plataform-tools/adb.bin               adb
+data/data/com.termux/files/usr/lib/android/plataform-tools/fastboot.bin          adb
+install-repo                                                                     adb
+data/data/com.termux/files/usr/bin/adb                                           adb
+data/data/com.termux/files/usr/bin/fastboot                                      adb
