@@ -1,0 +1,4 @@
+data/data/com.termux/files/usr/lib/android/plataform-tools/adb.bin               adb
+data/data/com.termux/files/usr/lib/android/plataform-tools/fastboot.bin          adb
+data/data/com.termux/files/usr/bin/adb                                           adb
+data/data/com.termux/files/usr/bin/fastboot                                      adb
