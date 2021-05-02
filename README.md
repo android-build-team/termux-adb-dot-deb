@@ -2,7 +2,7 @@
 Android Debug Bridge for Termux in a .deb package
 ### Installation 
 - <b>Download and run the script</b></br>
-```wget https://raw.githubusercontent.com/bapm394/termux-adb-dot-deb/main/install-repo ; chmod 777 ./install-repo ; ./install-repo```
+```wget https://raw.githubusercontent.com/bapm394/termux-adb-dot-deb/master/install-repo ; chmod 777 ./install-repo ; ./install-repo```
 - <b>And install adb</b></br>
 ```apt update ; apt install adb```
 - <b>Make sure you install it on aarch64 or aarch (arm - arm64) architecture</b></br>
