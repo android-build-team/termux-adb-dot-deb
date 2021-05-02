@@ -13,4 +13,4 @@ Android Debug Bridge for Termux in a .deb package
 - <b>And if you regret the past just do this</b></br>
 ```apt install adb```
 
-* Chris Renshaw created the binaries, [here the link to xda](https://forum.xda-developers.com/t/tools-zips-scripts-osm0sis-odds-and-ends-multiple-devices-platforms.2239421/) and [Github](https://github.com/osm0sis)
+* The binaries are those of Android, (the ones that were once).
